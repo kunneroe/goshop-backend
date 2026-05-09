@@ -109,6 +109,7 @@ model Supermarket {
   etaMinMinutes Int?
   etaMaxMinutes Int?
   deliveryFee   Decimal           @db.Decimal(12, 2) @default(0)
+  imageUrl      String?
   products      Product[]
   carts         Cart[]
   orders        Order[]
