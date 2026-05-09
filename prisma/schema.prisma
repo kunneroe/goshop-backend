@@ -46,6 +46,7 @@ enum PaymentStatus {
 enum AddressLabel {
   HOME
   OFFICE
+  SCHOOL
   OTHER
 }
 

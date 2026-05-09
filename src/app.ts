@@ -5,6 +5,7 @@ import { authRouter } from "./routes/auth.routes";
 import { supermarketRouter } from "./routes/supermarket.routes";
 import { categoryRouter } from "./routes/category.routes";
 import { productRouter } from "./routes/product.routes";
+import { addressRouter } from "./routes/address.routes";
 
 export const app = express();
 
@@ -17,3 +18,4 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/supermarkets", supermarketRouter);
 app.use("/api/v1/categories", categoryRouter);
 app.use("/api/v1/products", productRouter);
+app.use("/api/v1/addresses", addressRouter);
