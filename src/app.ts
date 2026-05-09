@@ -9,6 +9,7 @@ import { addressRouter } from "./routes/address.routes";
 import { cartRouter } from "./routes/cart.routes";
 import { checkoutRouter } from "./routes/checkout.routes";
 import { orderRouter } from "./routes/order.routes";
+import { paymentRouter } from "./routes/payment.routes";
 
 export const app = express();
 
@@ -25,3 +26,4 @@ app.use("/api/v1/addresses", addressRouter);
 app.use("/api/v1/cart", cartRouter);
 app.use("/api/v1/checkout", checkoutRouter);
 app.use("/api/v1/orders", orderRouter);
+app.use("/api/v1/payments", paymentRouter);
